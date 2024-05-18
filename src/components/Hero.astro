@@ -6,10 +6,18 @@ import MailIcon from "@/components/icons/Mail.astro"
 import SocialPill from "@/components/SocialPill.astro"
 ---
 
+const TAGS = {
+  GOOGLE: {
+    name: "Google",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  }
+  
+}
 <div class="max-w-xl">
   <div class="flex gap-4 mb-4">
     <img
-      class="rounded-full shadow-lg size-17"
+      class="rounded-full shadow-lg size-16.5"
       src="/juanpaz.webp"
       alt={personalImageAlt}
     />
@@ -34,6 +42,7 @@ import SocialPill from "@/components/SocialPill.astro"
       >Ingeniero de Software y Arquitecto Cloud </strong> de Cali Ve! - Colombia. Certificado :
     <div class="flex gap-4 mb-4">
       GCP google 
+      tags: [TAGS.GOOGLE],
       <img
       class="rounded-full shadow-lg size-10"
       src="/cgp_arq.webp"
