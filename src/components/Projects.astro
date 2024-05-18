@@ -5,6 +5,18 @@ import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
+const TAGS = {
+  NEXT: {
+    name: "Gemini-ChatpG",
+    class: "bg-black text-white",
+    
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    
+  },
+}
 const PROJECTS = [
   {
     title: "Crazy Coach - Equipo de coaches de alto rendimiento apoyados con tecnológica de Gen AI , WebApp",
@@ -13,7 +25,7 @@ const PROJECTS = [
     link: "https://crazycoach.fit/",
     github: "https://github.com/fresko/AI_Gemini_Appsheet",
     image: "/projects/cc.webp",
-    
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
   {
     title: "AdventJS - Retos de programación con JavaScript y TypeScript",
@@ -21,7 +33,7 @@ const PROJECTS = [
       "Estamos desarrollando un gran sueño con el propósito de elevar la calidad de vida de mujeres alrededor del mundo, tanto física como mentalmente. Reconocemos su fuerza, inteligencia y liderazgo innato, y creemos que es fundamental que se empoderen para transformar no solo sus propias vidas, sino también sus comunidades y el mundo !..",
     link: "https://adventjs.dev",
     image: "/projects/adventjs.webp",
-    
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
 ]
 ---
